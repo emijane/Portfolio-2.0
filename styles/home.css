@@ -10,20 +10,24 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background: rgb(254, 236, 233);
+	height: 100%;
+	font-family: "Inter", sans-serif;
+	background: rgb(254, 236, 233);
 	background: linear-gradient(
 		38deg,
 		rgba(254, 236, 233, 1) 12%,
 		rgba(255, 255, 255, 1) 48%,
 		rgba(241, 235, 250, 1) 89%
 	);
-    padding-left: 2rem;
-    padding-right: 2rem;
+}
+
+main {
+	padding-left: 5rem;
+	padding-right: 5rem;
 }
 
 .nav {
-    display: flex;
+	display: flex;
 	justify-content: center;
 	position: fixed;
 	top: 0;
@@ -39,135 +43,160 @@ body {
 /* NAV BAR */
 
 .nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-    justify-content: center;
-    list-style-type: none;
-    color: rgb(63,61,86, 0.8);
-    font-weight: 500;
+	display: flex;
+	flex-direction: row;
+	gap: 5rem;
+	justify-content: center;
+	list-style-type: none;
+	color: rgb(63, 61, 86, 0.8);
+	font-weight: 500;
 }
 
 .nav li {
-    transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .nav li:hover {
-    color: #FF88A4;
-    cursor: pointer;
-}
-
-.current {
-    color: #FF88A4;
+	color: #f77687;
+	cursor: pointer;
 }
 
 /* HOME PAGE */
 
 .home {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .home-wrap {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 5rem;
 }
 
 .home-wrap img {
-    width: 100%;
-    height: 100%;
-    max-width: 30rem;
+	width: 100%;
+	height: 100%;
+	max-width: 30rem;
 }
 
 .home-title {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
 }
 
 .home-title h1 {
-    font-size: 3rem;
-    color: #FF88A4;
+	font-size: 3rem;
+	color: #f77687;
 }
 
 #icon {
-    margin-right: 0.8rem;
+	margin-right: 0.8rem;
 }
 
 .home-title h2 {
-    opacity: 90%;
-    font-size: 1.5rem;
-    color: #3f3d56;
-    font-weight: 500;
+	opacity: 90%;
+	font-size: 1.5rem;
+	color: #3f3d56;
+	font-weight: 500;
 }
 
 .home-title p {
-    opacity: 80%;
-    color: #3f3d56;
-    max-width: 30rem;
-    line-height: 2.4rem;
-    font-weight: 500;
-    font-size: 1.1rem;
+	opacity: 80%;
+	color: #3f3d56;
+	max-width: 30rem;
+	line-height: 2.4rem;
+	font-weight: 500;
+	font-size: 1.1rem;
 }
 
 .links {
-    display: flex;
-    gap: 2.5rem;
-    list-style-type: none;
+	display: flex;
+	gap: 2.5rem;
+	list-style-type: none;
 }
 
 .links a {
-    font-size: 1.5rem;
-    color: #3f3d56;
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
+	font-size: 1.5rem;
+	color: #3f3d56;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
 }
 
 .links a:hover {
-    color: #FF88A4;
-    cursor: pointer;
+	color: #f77687;
+	cursor: pointer;
+	transform: translateY(-2px);
+}
+
+#arrow_down {
+	color: #f77687;
+	font-size: 2rem;
+	position: absolute;
+	bottom: 60px;
+	animation-name: arrow_down;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes arrow_down {
+	from {
+		transform: translate(0, 0px);
+	}
+	65% {
+		transform: translate(0, 10px);
+	}
+	to {
+		transform: translate(0, -0px);
+	}
+}
+
+#arrow_down:hover {
+	cursor: pointer;
 }
 
 /* ABOUT PAGE */
 
 .about {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 5rem;
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 8rem;
 }
 .about-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
 }
 
 .about-title {
-    display: flex;
-    flex-direction: column;
-    max-width: 40rem;
-    gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	max-width: 40rem;
+	gap: 1rem;
 }
 
 .about-title h2 {
-    font-size: 2rem;
-    color: #3f3d56;
+	font-size: 2rem;
+	color: #3f3d56;
 }
 
 .about-title p {
-    opacity: 80%;
-    color: #3f3d56;
-    line-height: 2.4rem;
-    font-weight: 500;
-    font-size: 1.1rem;
+	opacity: 80%;
+	color: #3f3d56;
+	line-height: 2.4rem;
+	font-weight: 500;
+	font-size: 1.1rem;
 }
 
 .about img {
@@ -179,6 +208,11 @@ body {
 	max-height: 14rem;
 	max-width: 14rem;
 	object-fit: cover;
+}
+
+mark {
+	background-color: transparent;
+	color: #f77687;
 }
 
 /* ABOUT PAGE - SKILLS */
@@ -200,7 +234,7 @@ body {
 .skill_icon {
 	width: 2.3rem;
 	height: 2.3rem;
-	color: #FF88A4;
+	color: #f77687;
 }
 
 .skills {
@@ -231,32 +265,65 @@ body {
 	padding: 0.3rem;
 	transition: all 0.2s ease-in-out;
 	color: #3f3d56;
-    opacity: 80%;
-    font-weight: 500;
-    font-size: 1.1rem;
+	opacity: 80%;
+	font-weight: 500;
+	font-size: 1.1rem;
 }
 
+/* FOOTER */
+
+footer {
+	color: white;
+	background-color: #f77687;
+	display: flex;
+	justify-content: center;
+	padding: 1.5rem;
+}
+
+/* MEDIA QUERIES*/
+
 @media only screen and (max-width: 1000px) {
-    .home {
-        padding-top: 7rem;
-        height: auto;
-    }
+	.home {
+		padding-top: 7rem;
+		height: auto;
+	}
 
-    .home-wrap {
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: 3rem;
-    }
+	.home-wrap {
+		flex-direction: column-reverse;
+		text-align: center;
+		gap: 3rem;
+	}
 
-    .home-wrap img {
-        max-width: 20rem;
-    }
+	.home-wrap img {
+		max-width: 20rem;
+	}
 
-    .home-title h1 {
-        font-size: 2.5rem;
-    }
-    
-    .links {
-        justify-content: center;
-    }
+	.home-title h1 {
+		font-size: 2.5rem;
+	}
+
+	.links {
+		justify-content: center;
+	}
+
+	#arrow_down {
+		display: none;
+	}
+
+	.about {
+		text-align: center;
+		height: auto;
+		margin-top: 9rem;
+		margin-bottom: 9rem;
+	}
+
+	.about-wrap {
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.about img {
+		max-height: 12rem;
+		max-width: 12rem;
+	}
 }
