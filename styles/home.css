@@ -1,0 +1,262 @@
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: rgb(254, 236, 233);
+	background: linear-gradient(
+		38deg,
+		rgba(254, 236, 233, 1) 12%,
+		rgba(255, 255, 255, 1) 48%,
+		rgba(241, 235, 250, 1) 89%
+	);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.nav {
+    display: flex;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	padding: 2rem;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	background-color: transparent;
+}
+
+/* NAV BAR */
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: center;
+    list-style-type: none;
+    color: rgb(63,61,86, 0.8);
+    font-weight: 500;
+}
+
+.nav li {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav li:hover {
+    color: #FF88A4;
+    cursor: pointer;
+}
+
+.current {
+    color: #FF88A4;
+}
+
+/* HOME PAGE */
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+}
+
+.home-wrap img {
+    width: 100%;
+    height: 100%;
+    max-width: 30rem;
+}
+
+.home-title {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.home-title h1 {
+    font-size: 3rem;
+    color: #FF88A4;
+}
+
+#icon {
+    margin-right: 0.8rem;
+}
+
+.home-title h2 {
+    opacity: 90%;
+    font-size: 1.5rem;
+    color: #3f3d56;
+    font-weight: 500;
+}
+
+.home-title p {
+    opacity: 80%;
+    color: #3f3d56;
+    max-width: 30rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.links {
+    display: flex;
+    gap: 2.5rem;
+    list-style-type: none;
+}
+
+.links a {
+    font-size: 1.5rem;
+    color: #3f3d56;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.links a:hover {
+    color: #FF88A4;
+    cursor: pointer;
+}
+
+/* ABOUT PAGE */
+
+.about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+.about-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.about-title {
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    gap: 1rem;
+}
+
+.about-title h2 {
+    font-size: 2rem;
+    color: #3f3d56;
+}
+
+.about-title p {
+    opacity: 80%;
+    color: #3f3d56;
+    line-height: 2.4rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.about img {
+	border: 2px solid #ffc3d1;
+	padding: 0.3rem;
+	border-radius: 100%;
+	height: 100%;
+	width: 100%;
+	max-height: 14rem;
+	max-width: 14rem;
+	object-fit: cover;
+}
+
+/* ABOUT PAGE - SKILLS */
+
+.skill_wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 0.8rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.skill_wrap:hover {
+	cursor: default;
+	transform: translateY(-4px);
+}
+
+.skill_icon {
+	width: 2.3rem;
+	height: 2.3rem;
+	color: #FF88A4;
+}
+
+.skills {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.skills h3 {
+	color: #3f3d56;
+	font-size: 1.8rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.skills_wrapper {
+	flex-wrap: wrap;
+	margin-top: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+	gap: 4rem;
+}
+
+.skills li {
+	display: inline-block;
+	padding: 0.3rem;
+	transition: all 0.2s ease-in-out;
+	color: #3f3d56;
+    opacity: 80%;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .home {
+        padding-top: 7rem;
+        height: auto;
+    }
+
+    .home-wrap {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .home-wrap img {
+        max-width: 20rem;
+    }
+
+    .home-title h1 {
+        font-size: 2.5rem;
+    }
+    
+    .links {
+        justify-content: center;
+    }
+}
