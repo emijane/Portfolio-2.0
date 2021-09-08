@@ -172,7 +172,7 @@ nav li:hover {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	gap: 8rem;
+	gap: 4rem;
 }
 .about-wrap {
 	display: flex;
@@ -221,6 +221,19 @@ nav li:hover {
 mark {
 	background-color: transparent;
 	color: #f77687;
+}
+
+/* LINE */
+
+.line {
+	margin: auto;
+	border-width: 0;
+	height: 2px;
+	border-width: 0;
+	background-color: #dd6070;
+	opacity: 15%;
+	max-width: 15rem;
+	width: 100%;
 }
 
 /* ABOUT PAGE - SKILLS */
@@ -454,5 +467,16 @@ footer {
 @media only screen and (max-width: 900px) {
 	form.contact-form {
 		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	main {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.about {
+		gap: 5rem;
 	}
 }
