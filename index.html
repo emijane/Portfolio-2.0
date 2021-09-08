@@ -20,13 +20,15 @@
 </head>
 
 <body>
-    <header class="nav">
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </header>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+</header>
     <main>
         <div data-aos="fade-down" data-aos-duration="1000" class="home">
             <div class="home-wrap">
@@ -132,6 +134,27 @@
 
     </main>
 
+    <div data-aos="fade-down" data-aos-duration="800" class="contact">
+        <div class="contact-title">
+            <h2><i id="icon" class="fad fa-sparkles"></i>Contact Me</h2>
+            <p>Feel free to contact me if you're interested in working together, or if you just want to chat!</p>
+            <div class="links">
+                <a href="https://github.com/emijane" target="_blank" rel="noopener"><i id="link"
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/emmadenunzio/" target="_blank" rel="noopener"><i id="link"
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto:emmadenunz@gmail.com" rel="noopener"><i id="link"
+                        class="fad fa-mailbox"></i></a>
+            </div>
+        </div>
+        <form class="contact-form" accept-charset="UTF-8" action="https://www.formbackend.com/f/1cf37a6bbb0217ac" method="POST">
+            <input id="name" name="name" placeholder="Name">
+            <input id="email" name="mail" placeholder="E-mail" />
+            <input id="subject" name="subject" placeholder="Subject" />
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+            <button id="submit" class="submit" name="submit">Send</button>
+        </form>
+    </div>
     <footer>
         <p>Developed and designed with love <i class="fas fa-heart"></i> by Emma DeNunzio</p>
     </footer>
@@ -139,6 +162,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="js/nav.js"></script>
 
 </body>
 
