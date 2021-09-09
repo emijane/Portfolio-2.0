@@ -20,16 +20,18 @@
 </head>
 
 <body>
-    <header class="nav">
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
+    <header>
+        <nav>
+            <ul>
+                <li id="home-btn" href="#home">Home</li>
+                <li id="about-btn">About</li>
+                <li id="contact-btn">Contact</li>
+            </ul>
+        </nav>
     </header>
     <main>
         <div data-aos="fade-down" data-aos-duration="1000" class="home">
-            <div class="home-wrap">
+            <div id="home" class="home-wrap">
                 <div class="home-title">
                     <h1>Hi, I'm Emma</h1>
                     <h2><i id="icon" class="fas fa-code"></i>Junior Web Developer</h2>
@@ -51,7 +53,7 @@
             <i id="arrow_down" class="fas fa-chevron-down"></i>
         </div>
 
-        <div class="about">
+        <div id="about" class="about">
             <div data-aos="fade-down" data-aos-duration="800" class="about-wrap">
                 <img src="images/me.jpg">
                 <div class="about-title">
@@ -68,6 +70,7 @@
                     </p>
                 </div>
             </div>
+            <hr data-aos="fade-down" data-aos-duration="800" class="line">
             <div data-aos="fade-down" data-aos-duration="800" class="skills">
                 <h3><i id="icon" class="fas fa-toolbox"></i>My Skills</h3>
                 <div class="skills_wrapper">
@@ -132,6 +135,27 @@
 
     </main>
 
+    <div data-aos="fade-down" data-aos-duration="800" id="contact" class="contact">
+        <div class="contact-title">
+            <h2><i id="icon" class="fad fa-sparkles"></i>Contact Me</h2>
+            <p>Feel free to contact me if you're interested in working together, or if you just want to chat!</p>
+            <div class="links">
+                <a href="https://github.com/emijane" target="_blank" rel="noopener"><i id="link"
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/emmadenunzio/" target="_blank" rel="noopener"><i id="link"
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto:emmadenunz@gmail.com" rel="noopener"><i id="link" class="fad fa-mailbox"></i></a>
+            </div>
+        </div>
+        <form class="contact-form" accept-charset="UTF-8" action="https://www.formbackend.com/f/1cf37a6bbb0217ac"
+            method="POST">
+            <input id="name" name="name" placeholder="Name">
+            <input id="email" name="mail" placeholder="E-mail" />
+            <input id="subject" name="subject" placeholder="Subject" />
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+            <button id="submit" class="submit" name="submit">Send</button>
+        </form>
+    </div>
     <footer>
         <p>Developed and designed with love <i class="fas fa-heart"></i> by Emma DeNunzio</p>
     </footer>
@@ -139,6 +163,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="js/scroll.js"></script>
 
 </body>
 

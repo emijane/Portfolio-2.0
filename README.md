@@ -1,2 +1,2 @@
-# Welcome to my portfolio!
-Currently under construction :D
+# Welcome to my portfolio! 
+Currently under construction 😊
