@@ -167,10 +167,12 @@ nav li:hover {
 /* ABOUT PAGE */
 
 .about {
-	margin-top: 10rem;
-	margin-bottom: 10rem;
+	height: 100vh;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 	gap: 4rem;
 }
@@ -203,7 +205,7 @@ nav li:hover {
 }
 
 .about img {
-	border: 2px solid #fdccd3;;
+	border: 2px solid #fdccd3;
 	padding: 0.3rem;
 	border-radius: 100%;
 	height: 100%;
@@ -215,7 +217,7 @@ nav li:hover {
 }
 
 .about img:hover {
-	border: 2px solid #f8afb8;;
+	border: 2px solid #f8afb8;
 }
 
 mark {
@@ -230,8 +232,7 @@ mark {
 	border-width: 0;
 	height: 2px;
 	border-width: 0;
-	background-color: #dd6070;
-	opacity: 15%;
+	background-color: #ffe0e4;
 	max-width: 15rem;
 	width: 100%;
 }
@@ -310,17 +311,16 @@ mark {
 }
 
 .contact-title h2 {
-	color:#f77687;
+	color: #f77687;
 	font-size: 1.9rem;
 }
 
 .contact-title p {
-	color:#3f3d56;
+	color: #3f3d56;
 	font-size: 1.1rem;
 	line-height: 2rem;
 	font-weight: 500;
 }
-
 
 form.contact-form {
 	display: flex;
@@ -462,7 +462,6 @@ footer {
 		text-align: center;
 	}
 }
-
 
 @media only screen and (max-width: 900px) {
 	form.contact-form {
