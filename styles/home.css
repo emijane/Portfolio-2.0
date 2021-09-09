@@ -19,6 +19,7 @@ body {
 		rgba(255, 255, 255, 1) 48%,
 		rgba(241, 235, 250, 1) 89%
 	);
+	-webkit-font-smoothing: subpixel-antialiased !important;
 }
 
 main {
@@ -441,6 +442,7 @@ footer {
 	.about {
 		text-align: center;
 		height: auto;
+		padding-top: 10rem;
 	}
 
 	.about-wrap {
