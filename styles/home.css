@@ -174,14 +174,20 @@ nav li:hover {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	gap: 4rem;
 }
+
+.about-container {
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+}
+
 .about-wrap {
 	display: flex;
+	gap: 5rem;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 5rem;
 }
 
 .about-title {
@@ -410,6 +416,9 @@ footer {
 
 /* MEDIA QUERIES*/
 
+@media only screen and (min-width: 1025px) {
+}
+
 @media only screen and (max-width: 1000px) {
 	.home {
 		padding-top: 7rem;
@@ -441,8 +450,7 @@ footer {
 	.about {
 		text-align: center;
 		height: auto;
-		margin-top: 9rem;
-		margin-bottom: 9rem;
+		margin-top: -2rem;
 	}
 
 	.about-wrap {
