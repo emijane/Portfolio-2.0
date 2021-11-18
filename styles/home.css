@@ -179,7 +179,7 @@ nav li:hover {
 .about-container {
 	display: flex;
 	flex-direction: column;
-	gap: 5rem;
+	gap: 3.5rem;
 }
 
 .about-wrap {
@@ -280,12 +280,13 @@ mark {
 
 .skills_wrapper {
 	flex-wrap: wrap;
-	margin-top: 3rem;
+	max-width: 32rem;
+	margin-top: 2.5rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	list-style-type: none;
-	gap: 4rem;
+	gap: 3.5rem;
 }
 
 .skills li {
@@ -295,7 +296,7 @@ mark {
 	color: #3f3d56;
 	opacity: 80%;
 	font-weight: 500;
-	font-size: 1.1rem;
+	font-size: 1rem;
 }
 
 /* CONTACT */
