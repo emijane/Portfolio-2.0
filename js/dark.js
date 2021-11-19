@@ -4,6 +4,8 @@ const bulb_toggle = document.getElementById('toggle');
 const data_toggle = document.querySelectorAll('.data-toggle');
 const contact_toggle = document.getElementById("contact");
 const input_toggle = document.querySelector('input-toggle');
+const nav = document.getElementById('nav');
+const line = document.getElementById('line');
 
 bulb_toggle.addEventListener("click", function () { 
     // Checks if bulb contains "light-bulb" class
@@ -21,6 +23,8 @@ bulb_toggle.addEventListener("click", function () {
         })
 
         contact_toggle.classList.add('contact-dark');
+        nav.classList.add('nav-dark');
+        line.classList.add('line-dark');
 
     } else  {
         // Checks if bulb contains "dark-bulb" class
@@ -38,6 +42,8 @@ bulb_toggle.addEventListener("click", function () {
         })
 
         contact_toggle.classList.remove('contact-dark');
+        nav.classList.remove('nav-dark');
+        line.classList.remove('line-dark');
 
     }
 });

@@ -18,9 +18,13 @@ body {
 .background-light {
   background: #feece9;
   background: linear-gradient(38deg, #feece9 12%, white 48%, #f1ebfa 89%);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .background-dark {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background-color: #131313;
 }
 
@@ -138,6 +142,11 @@ nav .dark-bulb:hover {
   cursor: pointer;
 }
 
+.nav-dark {
+  -webkit-box-shadow: 0 2px 10px -6px black !important;
+          box-shadow: 0 2px 10px -6px black !important;
+}
+
 /* HOME PAGE */
 .home {
   min-height: 100vh;
@@ -173,7 +182,7 @@ nav .dark-bulb:hover {
 .home-wrap img {
   width: 100%;
   height: 100%;
-  max-width: 30rem;
+  max-width: 32rem;
 }
 
 .home-wrap .home-title {
@@ -314,6 +323,10 @@ nav .dark-bulb:hover {
   background-color: #ffe0e4;
   max-width: 15rem;
   width: 100%;
+}
+
+.about .line-dark {
+  opacity: 30% !important;
 }
 
 .about .skills {
