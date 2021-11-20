@@ -14,7 +14,8 @@ $light-grey: #3f3d56;
 }
 
 :root {
-	--ti-cursor-color: dodgerblue;
+	--ti-color: #3f3d56 !important;
+	--ti-font-weight: 500 !important;
 }
 
 body {
@@ -94,11 +95,11 @@ nav {
 	ul {
 		display: flex;
 		flex-direction: row;
-		gap: 5rem;
+		gap: 5.5rem;
 		justify-content: center;
 		list-style-type: none;
 		color: $light-grey;
-		font-weight: 500;
+		font-weight: 600;
 
 		li {
 			transition: all 0.3s ease-in-out;
