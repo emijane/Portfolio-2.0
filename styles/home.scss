@@ -78,7 +78,7 @@ main {
 
 /* NAV BAR */
 
-nav {
+#nav_menu {
 	display: flex;
 	justify-content: center;
 	position: fixed;
@@ -96,7 +96,6 @@ nav {
 		display: flex;
 		flex-direction: row;
 		gap: 5.5rem;
-		justify-content: center;
 		list-style-type: none;
 		color: $light-grey;
 		font-weight: 600;
@@ -488,9 +487,29 @@ footer {
 
 /* MEDIA QUERIES*/
 
+#mobile_menu {
+	display: none;
+}
+
 @media only screen and (max-width: 1000px) {
+	#nav_menu {
+		display: none;
+	}
+
+	.emma {
+		display: none;
+	}
+
+	#mobile_menu {
+		display: block;
+	}
+
+	.light-bulb {
+		border: 1px solid red;
+		display: none !important;
+	}
+
 	.home {
-		padding-top: 7rem;
 		height: auto;
 
 		.home-wrap {

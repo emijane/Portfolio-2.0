@@ -17,12 +17,23 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/bfd3987de4.js" crossOrigin="anonymous"></script>
     <script src="https://unpkg.com/typeit@8.0.1/dist/index.umd.js"></script>
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+        });
+    </script>
+
     <title>Emma DeNunzio</title>
 </head>
 
 <body class="background-light">
     <header>
-        <nav id="nav">
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu" class="nav">
             <p class="emma">Emma DeNunzio</p>
             <ul class="data-toggle">
                 <li id="home-btn" href="#home">Home</li>
