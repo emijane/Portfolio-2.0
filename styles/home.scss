@@ -291,7 +291,7 @@ main {
 
 		.skills_wrapper {
 			flex-wrap: wrap;
-			max-width: 35rem;
+			max-width: 45rem;
 			margin-top: 2.5rem;
 			display: flex;
 			justify-content: center;
@@ -305,29 +305,29 @@ main {
 				align-items: center;
 				flex-direction: column;
 				gap: 0.8rem;
-				transition: all 0.2s ease-in-out;
-
+				transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+			
 				&:hover {
 					cursor: default;
 					transform: translateY(-4px);
 				}
-
+			
 				.skill_icon {
 					width: 2.3rem;
 					height: 2.3rem;
-					color: $main-pink;
+					color: $main-pink; /* Make sure $main-pink is defined in your variables */
 				}
-
+			
 				li {
 					display: inline-block;
 					padding: 0.3rem;
-					transition: all 0.2s ease-in-out;
-					color: $light-grey;
-					opacity: 80%;
+					transition: opacity 0.2s ease-in-out;
+					color: $light-grey; /* Make sure $light-grey is defined in your variables */
+					opacity: 0.8;
 					font-weight: 500;
 					font-size: 1rem;
 				}
-			}
+			}			
 		}
 	}
 }
